@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paw-some Cities - Pet-Friendly Movement</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <span class="logo">🐾</span>
+          <a class="brand-text" href="#home">Paw-some Cities</a>
+          
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#volunteer" class="nav-link">Volunteer</a>
+          <a href="#impact" class="nav-link">Impact Stories</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-emoji">🐾</div>
+        <h1 class="hero-title">
+          Making Cities<br />
+          <span class="hero-highlight">Paw-some!</span>
+        </h1>
+        <p class="hero-description">
+          Join our movement to create pet-friendly communities where every furry
+          friend feels at home! 🏠❤️
+        </p>
+        <div class="hero-buttons">
+          <a
+            class="btn btn-primary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdXI3a_znXzKJvTgpcj_Zse-1kvaWM5hQDgD6pK0cexbDiamg/viewform"
+            >🚀 Join the Movement</a
+          >
+          <a class="btn btn-secondary" href="#volunteer">🐕 Volunteer Now</a>
+          <a class="btn btn-ghost" href="#about">📚 Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Our Mission 🎯</h2>
+          <p>
+            We're building a world where pets and their humans can thrive
+            together in every neighborhood, park, and community space. Because
+            when cities are pet-friendly, they're people-friendly too! 🌟
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🏙️</div>
+            <h3>Urban Planning</h3>
+            <p>
+              Creating pet-friendly infrastructure and policies that benefit
+              entire communities.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Community Building</h3>
+            <p>
+              Connecting pet owners and animal lovers to build stronger
+              neighborhoods.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">❤️</div>
+            <h3>Animal Welfare</h3>
+            <p>
+              Ensuring every pet has access to care, love, and a safe
+              environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Form Section -->
+    <section id="volunteer" class="volunteer">
+      <div class="container">
+        <div class="section-header">
+          <h2>Join Our Pack! 🐺</h2>
+          <p>
+            Ready to make a difference? Sign up to volunteer and help us create
+            paw-some communities! 🌟
+          </p>
+        </div>
+        <div class="form-container">
+          <form class="volunteer-form" id="volunteer-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name 👤</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your awesome name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address 📧</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">Your City 🏙️</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Which city needs more paws?"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="role">Role Preference 🎯</label>
+                <select id="role" name="role" required>
+                  <option value="">Select your calling</option>
+                  <option value="event-organizer">Event Organizer 🎉</option>
+                  <option value="community-outreach">
+                    Community Outreach 📢
+                  </option>
+                  <option value="social-media">Social Media Manager 📱</option>
+                  <option value="fundraising">Fundraising 💰</option>
+                  <option value="pet-care">Pet Care Volunteer 🐕</option>
+                  <option value="advocacy">Policy Advocacy 📋</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="experience">Tell us about your experience! 💫</label>
+              <textarea
+                id="experience"
+                name="experience"
+                rows="4"
+                placeholder="Share your passion for pets and community building..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              🚀 Join the Paw-some Movement!
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pet Adoption Carousel -->
+    <section class="pets">
+      <div class="container">
+        <div class="section-header">
+          <h2>Meet Our Adoptable Friends! 🏠</h2>
+          <p>
+            These amazing pets are looking for their forever homes. Could one of
+            them be your new best friend?
+          </p>
+        </div>
+        <div class="carousel-container">
+          <div class="pet-carousel">
+            <div class="pet-card active" data-pet="0">
+              <div class="pet-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=400&fit=crop"
+                  alt="Buddy"
+                  class="pet-image"
+                />
+                <div class="heart-badge">❤️</div>
+              </div>
+              <h3>Buddy</h3>
+              <p class="pet-breed">Golden Retriever</p>
+              <p class="pet-age">3 years</p>
+              <p class="pet-description">Loves fetch and belly rubs! 🎾</p>
+              <button class="btn btn-primary">💕 Adopt Buddy</button>
+            </div>
+            <div class="pet-card" data-pet="1">
+              <div class="pet-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop"
+                  alt="Whiskers"
+                  class="pet-image"
+                />
+                <div class="heart-badge">❤️</div>
+              </div>
+              <h3>Whiskers</h3>
+              <p class="pet-breed">British Shorthair</p>
+              <p class="pet-age">2 years</p>
+              <p class="pet-description">Purr-fect cuddle companion! 😸</p>
+              <button class="btn btn-primary">💕 Adopt Whiskers</button>
+            </div>
+            <div class="pet-card" data-pet="2">
+              <div class="pet-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=400&h=400&fit=crop"
+                  alt="Luna"
+                  class="pet-image"
+                />
+                <div class="heart-badge">❤️</div>
+              </div>
+              <h3>Luna</h3>
+              <p class="pet-breed">Border Collie</p>
+              <p class="pet-age">4 years</p>
+              <p class="pet-description">Smart and energetic buddy! ⚡</p>
+              <button class="btn btn-primary">💕 Adopt Luna</button>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" id="prev-btn">‹</button>
+          <button class="carousel-btn carousel-next" id="next-btn">›</button>
+          <div class="carousel-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Stories -->
+    <section id="impact" class="impact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Impact Stories 📖</h2>
+          <p>
+            Real stories of transformation and hope from communities where we've
+            made a difference together! ✨
+          </p>
+        </div>
+        <div class="impact-grid">
+          <div class="impact-card">
+            <div class="impact-icon">🐕</div>
+            <h3>Downtown Dog Park Success! 🏞️</h3>
+            <p>
+              Thanks to our volunteers, we opened 3 new dog parks in the city
+              center, giving 500+ pets a safe space to play!
+            </p>
+            <div class="impact-stat">500+ pets served</div>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon">🏡</div>
+            <h3>Pet-Friendly Housing Initiative 🏠</h3>
+            <p>
+              Worked with landlords to create pet-friendly housing options,
+              helping 200+ families find homes.
+            </p>
+            <div class="impact-stat">200+ families helped</div>
+          </div>
+          <div class="impact-card">
+            <div class="impact-icon">⚕️</div>
+            <h3>Mobile Vet Clinics 🚐</h3>
+            <p>
+              Our mobile vet program has provided free healthcare to over 1000
+              pets in underserved areas!
+            </p>
+            <div class="impact-stat">1000+ pets treated</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get in Touch! 📞</h2>
+          <p>
+            Have questions? Want to start a chapter in your city? We'd love to
+            hear from you! 💌
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>Call Us 📞</h3>
+            <p>(+91 7024577333)</p>
+            <p>1-800-PAW-SOME</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h3>Email Us 📧</h3>
+            <p>mail@collegetips.in</p>
+            <p>volunteer@collegetips.in</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">🏢</div>
+            <h3>Visit Us 🏢</h3>
+            <p>74 Technopark, MIDC Gate no 2, Seepz, Andheri East</p>
+            <p>Mumbai, Maharashtra 400069</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="logo">🐾</span>
+            <span class="brand-text">Paw-some Cities</span>
+          </div>
+          <p>
+            Building communities where pets and people thrive together. Join us
+            in making every city a paw-some place to call home! 🏠❤️
+          </p>
+          <div class="footer-credits">
+            <span>© 2025 Paw-some Cities Campaign</span>
+            <span>•</span>
+            <span>Made by Pavan@intern at CollegeTips with ❤️ for pets everywhere</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        })
+      );
+
+      // Pet carousel functionality
+      let currentPet = 0;
+      const pets = document.querySelectorAll(".pet-card");
+      const dots = document.querySelectorAll(".dot");
+      const prevBtn = document.getElementById("prev-btn");
+      const nextBtn = document.getElementById("next-btn");
+
+      function showPet(index) {
+        pets.forEach((pet) => pet.classList.remove("active"));
+        dots.forEach((dot) => dot.classList.remove("active"));
+
+        pets[index].classList.add("active");
+        dots[index].classList.add("active");
+      }
+
+      function nextPet() {
+        currentPet = (currentPet + 1) % pets.length;
+        showPet(currentPet);
+      }
+
+      function prevPet() {
+        currentPet = (currentPet - 1 + pets.length) % pets.length;
+        showPet(currentPet);
+      }
+
+      nextBtn.addEventListener("click", nextPet);
+      prevBtn.addEventListener("click", prevPet);
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          currentPet = index;
+          showPet(currentPet);
+        });
+      });
+
+      // Auto-rotate carousel
+      setInterval(nextPet, 5000);
+
+      // Form submission
+      document
+        .getElementById("volunteer-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "Thank you for joining the movement! We'll be in touch soon! 🐾"
+          );
+          this.reset();
+        });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Add scroll effect to navbar
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
